@@ -1,0 +1,5 @@
+<div [appReactComponent]="Select" [props]="selectProps"></div>
+<button (click)="showSelect = true">Show Lazy React Component</button>
+<ng-container *ngIf="showSelect">
+	<div [appLazyReactComponent]="LazySelect" [props]="selectLazyProps"></div>
+</ng-container>
